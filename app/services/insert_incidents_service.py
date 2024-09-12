@@ -2,7 +2,7 @@ import json
 from app.batch_processing import IncidentBatchProcessor
 from app.commands import CreateIncidentCommand
 import os
-from constants import API_KEY, BASE_URL
+from app.constants import API_KEY, BASE_URL
 
 root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 incidents_file_path = os.path.join(root_dir, 'data', 'incidents.json')

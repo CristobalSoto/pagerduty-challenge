@@ -1,6 +1,6 @@
 from app.models import EscalationPolicy, Incident, Schedule, User, db, Service, Team
 import aiohttp
-from constants import API_KEY, BASE_URL
+from app.constants import API_KEY, BASE_URL
 
 
 async def fetch_pagerduty_data(endpoint: str) -> dict:
